@@ -23,8 +23,8 @@ float max3(float a, float b, float c)
 void reverse(char s[])
 {
   int c, i, j;
-
-  for (i = 0, j = strlen(s)-1; i < j; i++, j--) {
+  int len = strlen(s) - 1;
+  for (i = 0, j = len; i < j; i++, j--) {
     c = s[i];
     s[i] = s[j];
     s[j] = c;
